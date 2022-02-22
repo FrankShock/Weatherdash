@@ -12,11 +12,11 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/open-iconic/1.1.1/font/css/open-iconic-bootstrap.min.css"
     />
-    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="./assests/css/style.css" />
     <title>Weather Dashboard</title>
   </head>
 
-  <body>
+  <body id="backg">
     <header>
       <h1 class="text-center bg-header">Weather Dashboard</h1>
     </header>
@@ -35,10 +35,14 @@
             Search
           </button>
         </form>
+        <section
+          id="pastcitylist"
+          class="m-2 col-12 border-top border-green border-5"
+        ></section>
       </section>
 
-      <section class="col-9">
-        <section class="border border-2 col container m-2 p-2">
+      <section  class="col-9">
+        <section id="boxcolor" class="border border-2 col container m-2 p-2">
           <h2 class="">
             <span id="current-city"></span>
             <span id="current-date"></span>
@@ -55,43 +59,43 @@
           </article>
         </section>
 
-        <section id="forecast" class="col container m-2">
-          <h3 class="col">5-Day Forecast:</h3>
-          <section class="row col-12">
-            <article class="col-2 bg-forecast m-2">
-              <h4><span id="DatedayOne"></span></h4>
-              <img id="IcondayOne" />
-              <p>Temp: <span id="dayOneTemp"></span></p>
-              <p>Wind: <span id="WinddayOne"></span></p>
-              <p>Humidity: <span id="HumdayOne"></span></p>
-            </article>
-            <article class="col-2 bg-forecast m-2">
+   <section id="forecast" class="col container m-2">
+       <h3 class="col">5-Day Forecast:</h3>
+       <section class="row col-12">
+        <article class="col-2 bg-green m-2">
+          <h4><span id="DatedayOne"></span></h4>
+            <img id="IcondayOne" />
+                       <p>Temp: <span id="dayOneTemp"></span></p>
+                       <p>Wind: <span id="WinddayOne"></span></p>
+                       <p>Humidity: <span id="HumdayOne"></span></p>
+        </article>
+        <article class="col-2 bg-block m-2">
               <h4><span id="DatedayTwo"></span></h4>
               <img id="IcondayTwo" />
-              <p>Temp: <span id="dayTwoTemp"></span></p>
-              <p>Wind: <span id="WinddayTwo"></span></p>
-              <p>Humidity: <span id="HumdayTwo"></span></p>
+                        <p>Temp: <span id="dayTwoTemp"></span></p>
+                        <p>Wind: <span id="WinddayTwo"></span></p>
+                        <p>Humidity: <span id="HumdayTwo"></span></p>
             </article>
-            <article class="col-2 bg-forecast m-2">
+        <article class="col-2 bg-green m-2">
               <h4><span id="DatedayThree"></span></h4>
               <img id="IcondayThree" />
-              <p>Temp: <span id="dayThreeTemp"></span></p>
-              <p>Wind: <span id="WinddayThree"></span></p>
-              <p>Humidity: <span id="HumdayThree"></span></p>
-            </article>
-            <article class="col-2 bg-forecast m-2">
+                        <p>Temp: <span id="dayThreeTemp"></span></p>
+                        <p>Wind: <span id="WinddayThree"></span></p>
+                        <p>Humidity: <span id="HumdayThree"></span></p>
+        </article>
+        <article class="col-2 bg-block m-2">
               <h4><span id="DatedayFour"></span></h4>
               <img id="IcondayFour" />
-              <p>Temp: <span id="dayFourTemp"></span></p>
-              <p>Wind: <span id="WinddayFour"></span></p>
-              <p>Humidity: <span id="HumdayFour"></span></p>
-            </article>
-            <article class="col-2 bg-forecast m-2">
+                        <p>Temp: <span id="dayFourTemp"></span></p>
+                        <p>Wind: <span id="WinddayFour"></span></p>
+                        <p>Humidity: <span id="HumdayFour"></span></p>
+        </article>
+        <article class="col-2 bg-green m-2">
               <h4><span id="DatedayFive"></span></h4>
               <img id="IcondayFive" />
-              <p>Temp: <span id="dayFiveTemp"></span></p>
-              <p>Wind: <span id="WinddayFive"></span></p>
-              <p>Humidity: <span id="HumdayFive"></span></p>
+                        <p>Temp: <span id="dayFiveTemp"></span></p>
+                        <p>Wind: <span id="WinddayFive"></span></p>
+                        <p>Humidity: <span id="HumdayFive"></span></p>
             </article>
           </section>
         </section>
@@ -100,6 +104,9 @@
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
-    <script src="assets/js/script.js"></script>
+    <script src="./assests/js/script.js"></script>
   </body>
+  <footer  id="backg">
+
+  </footer>
 </html>
